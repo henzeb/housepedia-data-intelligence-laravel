@@ -1,0 +1,66 @@
+{
+  "address": {
+    "bag_id": "0363200000028422",
+    "postcode": "1076LJ",
+    "house_number": 12,
+    "house_number_ext": "2",
+    "street": "Amazonenstraat",
+    "city": "Amsterdam",
+    "municipality": "Amsterdam",
+    "province": "Noord-Holland",
+    "location": {
+      "lat": 52.34536032,
+      "lon": 4.86274012
+    },
+    "rd": {
+      "x": 120000.5,
+      "y": 485000.25
+    },
+    "huispedia_url": "huispedia_url-value"
+  },
+  "foundation": {
+    "at_risk": true,
+    "subsoil": "subsoil-value"
+  },
+  "subsidence": {
+    "ground_elevation_change": 1.5,
+    "unit": "unit-value",
+    "source": "source-value"
+  },
+  "noise": {
+    "road_lden_db": 1.5,
+    "road_lnight_db": 1.5,
+    "rail_lden_db": 1.5,
+    "rail_lnight_db": 1.5,
+    "aviation_lden_db": 1.5,
+    "industry_lden_db": 1.5,
+    "wind_turbines_lden_db": 1.5
+  },
+  "air": {
+    "no2_ug_m3": 1.5,
+    "pm25_ug_m3": 1.5,
+    "pm10_ug_m3": 1.5
+  },
+  "heat": {
+    "urban_heat_island_c": 1.5,
+    "green_cooling_effect": 1.5
+  },
+  "light_pollution": 1.5,
+  "environmental_health_risk": 1.5,
+  "bee_richness": 1.5,
+  "sources": {
+    "school": "school-value"
+  },
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

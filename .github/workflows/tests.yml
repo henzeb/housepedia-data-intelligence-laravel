@@ -1,0 +1,95 @@
+name: "tests"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+jobs:
+  tests:
+    name: PHP ${{ matrix.php }} - ${{ matrix.stability }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.php == '8.6' }}
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [ '8.3', '8.4', '8.5', '8.6' ]
+        stability: [ prefer-lowest, prefer-stable ]
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:v2
+          coverage: none
+
+      - name: Disable Packagist install notifications
+        run: composer config --global notify-on-install false
+
+      - name: Setup Problem Matchers
+        run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+        if: ${{ !env.ACT }}
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v6
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ matrix.stability }}-${{ matrix.php }}
+          restore-keys: ${{ runner.os }}-composer-${{ matrix.stability }}-${{ matrix.php }}
+        if: ${{ !env.ACT }}
+
+      - name: Install PHP Dependencies
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress --quiet
+
+      - name: Static Analysis
+        run: vendor/bin/phpstan analyse --no-progress
+
+      - name: Execute Tests
+        run: vendor/bin/pest --parallel
+
+  style:
+    name: Code style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          tools: composer:v2
+          coverage: none
+
+      - name: Disable Packagist install notifications
+        run: composer config --global notify-on-install false
+
+      - name: Install PHP Dependencies
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress --quiet
+
+      - name: Check code style
+        run: vendor/bin/pint --test

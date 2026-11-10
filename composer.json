@@ -1,0 +1,107 @@
+{
+    "name": "henzeb/housepedia-data-intelligence-laravel",
+    "description": "Laravel integration for the Housepedia Data Intelligence PHP SDK",
+    "keywords": [
+        "henzeb",
+        "laravel",
+        "housepedia",
+        "huispedia",
+        "housepedia data intelligence",
+        "huispedia data intelligence",
+        "data intelligence",
+        "real estate",
+        "property data",
+        "valuation",
+        "woz",
+        "bag",
+        "netherlands",
+        "sdk",
+        "dutch",
+        "energy label",
+        "kadaster",
+        "cbs",
+        "address",
+        "postcode",
+        "geocoding",
+        "psr-18",
+        "vastgoed",
+        "woning",
+        "woningwaarde",
+        "waardebepaling",
+        "taxatie",
+        "energielabel",
+        "adres",
+        "buurt",
+        "makelaar"
+    ],
+    "homepage": "https://github.com/henzeb/housepedia-data-intelligence-laravel",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Henze Berkheij",
+            "email": "henzeberkheij@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.8|^8.0",
+        "henzeb/housepedia-data-intelligence": "^1.0",
+        "illuminate/collections": "^12.0|^13.0",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "psr/http-client": "^1.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.30",
+        "mockery/mockery": "^1.6.13",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^4.0|^5.0",
+        "pestphp/pest-plugin-laravel": "^4.0|^5.0",
+        "php-http/mock-client": "^1.6.1",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Henzeb\\Housepedia\\Data\\Intelligence\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-parallel": "vendor/bin/pest --parallel",
+        "test-coverage-txt": "vendor/bin/pest --coverage",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/pest --coverage-html coverage",
+        "test-dox": "vendor/bin/pest --testdox",
+        "test-mutate": "XDEBUG_MODE=coverage vendor/bin/pest --mutate",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "format-check": "vendor/bin/pint --test"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Henzeb\\Housepedia\\Data\\Intelligence\\Laravel\\HousepediaServiceProvider"
+            ],
+            "aliases": {
+                "Housepedia": "Henzeb\\Housepedia\\Data\\Intelligence\\Laravel\\Facades\\Housepedia"
+            }
+        }
+    }
+}

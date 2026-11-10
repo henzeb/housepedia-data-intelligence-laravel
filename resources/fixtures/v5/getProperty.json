@@ -1,0 +1,108 @@
+{
+  "address": {
+    "bag_id": "0363200000028422",
+    "postcode": "1076LJ",
+    "house_number": 12,
+    "house_number_ext": "2",
+    "street": "Amazonenstraat",
+    "city": "Amsterdam",
+    "municipality": "Amsterdam",
+    "province": "Noord-Holland",
+    "location": {
+      "lat": 52.34536032,
+      "lon": 4.86274012
+    },
+    "rd": {
+      "x": 120000.5,
+      "y": 485000.25
+    },
+    "huispedia_url": "huispedia_url-value"
+  },
+  "type": {
+    "object_type": "object_type-value",
+    "house_type": "house_type-value",
+    "house_type_detail": "house_type_detail-value",
+    "house_kind": "house_kind-value",
+    "construction_kind": "construction_kind-value",
+    "construction_period": "construction_period-value"
+  },
+  "dimensions": {
+    "living_area_m2": 7,
+    "plot_area_m2": 7,
+    "volume_m3": 7,
+    "external_storage_m2": 7,
+    "building_bound_outdoor_m2": 7,
+    "other_indoor_m2": 7,
+    "bag_area_m2": 7
+  },
+  "rooms": {
+    "rooms": 7,
+    "bedrooms": 7,
+    "bathrooms": 7,
+    "separate_toilets": 7,
+    "floors": 7,
+    "floor_level": 7
+  },
+  "outdoor": {
+    "garden_area_m2": 7,
+    "garden_orientation": "garden_orientation-value",
+    "garden_orientation_degrees": 7,
+    "garage_type": "garage_type-value",
+    "garage_area_m2": 7,
+    "parking": "parking-value"
+  },
+  "construction": {
+    "construction_year": 7,
+    "roof_type": "roof_type-value",
+    "roof_material": "roof_material-value",
+    "insulation": [
+      "insulation-value"
+    ],
+    "heating": [
+      "heating-value"
+    ],
+    "location_types": [
+      "location_types-value"
+    ],
+    "is_monument": true,
+    "monument_status": "monument_status-value"
+  },
+  "energy": {
+    "energy_label": "energy_label-value",
+    "energy_label_source": "energy_label_source-value"
+  },
+  "ownership": {
+    "tenure": "tenure-value",
+    "leasehold": {
+      "is_bought_off": true,
+      "buyout_end_date": "2026-10-26",
+      "yearly_canon": 1.5,
+      "is_perpetual": true,
+      "period_end_year": 7,
+      "landowner": "landowner-value",
+      "general_conditions": "general_conditions-value",
+      "is_rate_locked": true,
+      "has_cost_risk": true,
+      "years_until_canon_resumes": 7,
+      "summary": "summary-value"
+    },
+    "vve_monthly_contribution": 7,
+    "dwellings_in_building": 7
+  },
+  "maintenance": {
+    "interior": "interior-value",
+    "exterior": "exterior-value"
+  },
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "area": {
+    "code": "GM0363",
+    "name": "Amsterdam"
+  },
+  "population": 7,
+  "population_density": 1.5,
+  "address_density": 1.5,
+  "households": {
+    "avg_size": 1.5,
+    "share_with_children": 1.5,
+    "share_single_person": 1.5
+  },
+  "age": {
+    "share_0_15": 1.5,
+    "share_25_45": 1.5,
+    "share_65_plus": 1.5
+  },
+  "cars_per_household": 1.5,
+  "cbs_vintage_year": 7,
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

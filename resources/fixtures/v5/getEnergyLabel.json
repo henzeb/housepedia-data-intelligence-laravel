@@ -1,0 +1,46 @@
+{
+  "address": {
+    "bag_id": "0363200000028422",
+    "postcode": "1076LJ",
+    "house_number": 12,
+    "house_number_ext": "2",
+    "street": "Amazonenstraat",
+    "city": "Amsterdam",
+    "municipality": "Amsterdam",
+    "province": "Noord-Holland",
+    "location": {
+      "lat": 52.34536032,
+      "lon": 4.86274012
+    },
+    "rd": {
+      "x": 120000.5,
+      "y": 485000.25
+    },
+    "huispedia_url": "huispedia_url-value"
+  },
+  "label": "A",
+  "source": "source-value",
+  "recording_date": "2026-10-26",
+  "valid_to": "2026-10-26",
+  "registration_date": "2026-10-26",
+  "is_expired": true,
+  "history": [
+    {
+      "label": "A",
+      "recording_date": "2026-10-26",
+      "valid_to": "2026-10-26"
+    }
+  ],
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

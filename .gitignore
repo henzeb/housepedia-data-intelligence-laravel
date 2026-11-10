@@ -1,0 +1,11 @@
+.idea
+.phpunit.result.cache
+.phpunit.cache/
+build
+composer.lock
+coverage
+vendor
+.php-cs-fixer.cache
+testbench.yaml
+composer.local.json
+composer.local.lock

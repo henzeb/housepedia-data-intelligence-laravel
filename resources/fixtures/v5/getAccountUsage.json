@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "date": "2026-10-26",
+      "endpoint": "endpoint-value",
+      "key_id": "key_id-value",
+      "calls": 7,
+      "succeeded": 7,
+      "failed": 7,
+      "credits": 7,
+      "kadaster_records": 7
+    }
+  ],
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "area": {
+    "code": "GM0363",
+    "name": "Amsterdam"
+  },
+  "type": "type-value",
+  "period": "period-value",
+  "market": {
+    "for_sale_count": 7,
+    "transactions_count": 7,
+    "avg_transaction_price": 7,
+    "avg_transaction_price_per_m2": 7,
+    "avg_asking_price": 7,
+    "avg_asking_price_per_m2": 7,
+    "transaction_price_per_m2_yoy_pct": 1.5,
+    "median_days_on_market": 1.5,
+    "median_overbid_pct": 1.5,
+    "share_sold_above_asking": 1.5,
+    "listings_per_1000_properties": 1.5,
+    "median_estimated_home_value": 7
+  },
+  "stock": {
+    "properties_count": 7,
+    "median_construction_year": 7,
+    "share_prewar": 1.5,
+    "share_built_after_2000": 1.5,
+    "median_living_area_m2": 1.5,
+    "share_under_75_m2": 1.5,
+    "share_multi_family": 1.5,
+    "share_detached": 1.5,
+    "share_terraced": 1.5,
+    "share_energy_label_a_or_better": 1.5
+  },
+  "environment": {
+    "avg_noise_road_lden_db": 1.5,
+    "avg_pm25_ug_m3": 1.5,
+    "avg_no2_ug_m3": 1.5,
+    "avg_urban_heat_island_c": 1.5,
+    "share_public_green": 1.5,
+    "share_water": 1.5
+  },
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

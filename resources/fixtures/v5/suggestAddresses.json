@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "type": "type-value",
+      "label": "A",
+      "bag_id": "0363200000028422",
+      "postcode": "1076LJ",
+      "house_number": 12,
+      "house_number_ext": "2",
+      "street": "Amazonenstraat",
+      "city": "Amsterdam",
+      "municipality": "Amsterdam",
+      "location": {
+        "lat": 52.34536032,
+        "lon": 4.86274012
+      },
+      "address_count": 7
+    }
+  ],
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

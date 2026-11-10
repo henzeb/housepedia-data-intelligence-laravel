@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+$root = dirname(__DIR__);
+
+$config = json_decode((string) file_get_contents($root . '/composer.json'), true, flags: JSON_THROW_ON_ERROR);
+
+$config['repositories'] = [
+    [
+        'type' => 'path',
+        'url' => '../housepedia-data-intelligence',
+        'options' => [
+            'symlink' => true,
+            'versions' => ['henzeb/housepedia-data-intelligence' => '1.x-dev'],
+        ],
+    ],
+];
+
+$core = $config['require']['henzeb/housepedia-data-intelligence'] ?? '^1.0';
+$config['require']['henzeb/housepedia-data-intelligence'] = str_contains($core, '@') ? $core : $core . '@dev';
+
+file_put_contents(
+    $root . '/composer.local.json',
+    json_encode($config, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR) . PHP_EOL,
+);
+
+$arguments = array_slice($argv, 1) ?: ['update'];
+
+chdir($root);
+putenv('COMPOSER=composer.local.json');
+passthru('composer ' . implode(' ', array_map('escapeshellarg', $arguments)), $code);
+
+exit($code);

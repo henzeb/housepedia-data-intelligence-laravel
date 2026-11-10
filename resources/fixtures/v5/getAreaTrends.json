@@ -1,0 +1,41 @@
+{
+  "area": {
+    "code": "GM0363",
+    "name": "Amsterdam"
+  },
+  "type": "type-value",
+  "metric": "metric-value",
+  "interval": "interval-value",
+  "data": [
+    {
+      "date": "2026-10-26",
+      "value": 1.5,
+      "yoy_pct": 1.5
+    }
+  ],
+  "parents": [
+    {
+      "type": "type-value",
+      "code": "GM0363",
+      "data": [
+        {
+          "date": "2026-10-26",
+          "value": 1.5,
+          "yoy_pct": 1.5
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

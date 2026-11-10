@@ -1,0 +1,43 @@
+{
+  "account_id": "account_id-value",
+  "type": "type-value",
+  "name": "Amsterdam",
+  "locale": "locale-value",
+  "plan": "plan-value",
+  "balance": {
+    "total": 7,
+    "buckets": [
+      {
+        "kind": "kind-value",
+        "remaining": 7,
+        "granted": 7,
+        "expires_at": "2026-10-26T12:00:00+00:00"
+      }
+    ]
+  },
+  "spend_cap": {
+    "monthly_credits": 7,
+    "used_this_month": 7
+  },
+  "limits": {
+    "requests_per_second": 1.5,
+    "concurrency": 7,
+    "monitored_addresses_max": 7
+  },
+  "entitlements": [
+    "entitlements-value"
+  ],
+  "terms_version": "terms_version-value",
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}

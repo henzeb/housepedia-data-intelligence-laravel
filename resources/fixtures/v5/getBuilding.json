@@ -1,0 +1,37 @@
+{
+  "bag_pand_id": "0363100012345678",
+  "construction_year": 7,
+  "bag_status": "bag_status-value",
+  "units_count": 7,
+  "residential_units_count": 7,
+  "units": [
+    {
+      "bag_id": "0363200000028422",
+      "house_number": 12,
+      "house_number_ext": "2",
+      "floor_level": 7,
+      "living_area_m2": 7,
+      "object_type": "object_type-value",
+      "is_residential": true
+    }
+  ],
+  "location": {
+    "lat": 52.34536032,
+    "lon": 4.86274012
+  },
+  "street": "Amazonenstraat",
+  "postcode": "1076LJ",
+  "city": "Amsterdam",
+  "meta": {
+    "request_id": "req_01M5W27EFJTGG4DQDJ6DVK3NVY",
+    "as_of": "2026-10-26",
+    "credits": {
+      "charged": 7,
+      "balance": 7
+    },
+    "next_cursor": null,
+    "withheld": [
+      "withheld-value"
+    ]
+  }
+}
